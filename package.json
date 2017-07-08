@@ -1,0 +1,22 @@
+{
+  "name": "csgo-ranking-bot",
+  "version": "1.0.0",
+  "description": "A bot for Telegram to store group users rankings on Counter-Strike Global Offensive",
+  "main": "index.js",
+  "repository": "git@github.com:offthread/csgo-ranking-bot.git",
+  "author": "Danilo Freitas <dsurviver@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node_modules/babel-cli/bin/babel-node.js --presets node8 index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.1",
+    "telebot": "^1.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-node8": "^1.1.2"
+  }
+}
