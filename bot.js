@@ -7,7 +7,7 @@ bot.on('/set', (msg, props) => {
   const messageData = msg.text.split(' ');
   const rank = messageData.slice(1).join(' ');
   const groupId = msg.chat.id;
-  const username = msg.from.username;
+  const username = msg.from.username || msg.from.name;
   const userId = msg.from.id;
   return playerServices.addOrUpdatePlayer(groupId, userId, username, rank)
     .then((result) => {
